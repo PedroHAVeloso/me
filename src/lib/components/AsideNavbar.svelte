@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import homeIcon from "$lib/assets/home.svg";
   import personIcon from "$lib/assets/person.svg";
   import menuIcon from "$lib/assets/menu.svg";

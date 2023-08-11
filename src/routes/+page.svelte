@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import AsideNavbar from "$lib/components/AsideNavbar.svelte";
 </script>
 
