@@ -4,7 +4,7 @@
   export let alt = "Icon";
 </script>
 
-<button class={filled ? "filled" : ""}>
+<button type="button" class={filled ? "filled" : ""}>
   <img {src} {alt} />
 </button>
 
@@ -21,6 +21,12 @@
 
     border: solid var(--400) 4px;
     background-color: transparent;
+
+    transition: 0.5s;
+  }
+
+  button:hover {
+    background-color: var(--200);
   }
 
   .filled {

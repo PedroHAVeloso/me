@@ -19,11 +19,6 @@
     font-family: "Poppins";
     padding: 0;
     margin: 0;
-  }
-
-  :global(body) {
-    background-color: var(--100);
-    display: flex;
-    flex-direction: row;
+    color: var(--900);
   }
 </style>

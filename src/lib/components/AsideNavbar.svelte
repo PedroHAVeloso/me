@@ -26,12 +26,16 @@
   nav {
     height: calc(100vh - 40px);
 
-    padding: 20px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 
     gap: 10px;
+  }
+
+  @media (max-width: 800px) {
+    nav {
+      display: none;
+    }
   }
 </style>
