@@ -7,7 +7,7 @@
   <button
     type="button"
     on:click={onClick}
-    class="h-[60px] w-[60px] bg-slate-200 dark:bg-slate-900 rounded-[20px] hover:bg-slate-300 dark:hover:bg-slate-800 transition duration-500 text-[1.5rem]"
+    class="flex items-center justify-center h-[60px] w-[60px] bg-slate-200 dark:bg-slate-900 rounded-[20px] hover:bg-slate-300 dark:hover:bg-slate-800 transition duration-500 text-[1.5rem]"
   >
     <slot />
   </button>
@@ -15,7 +15,7 @@
   <button
     type="button"
     on:click={onClick}
-    class="h-[60px] w-[60px] border-slate-100 dark:border-slate-800 border-[4px] rounded-[20px] hover:bg-slate-100 dark:hover:bg-slate-800 transition duration-500 text-[1.5rem]"
+    class="flex items-center justify-center h-[60px] w-[60px] border-slate-100 dark:border-slate-800 border-[4px] rounded-[20px] hover:bg-slate-100 dark:hover:bg-slate-800 transition duration-500 text-[1.5rem]"
   >
     <slot />
   </button>

@@ -1,15 +1,30 @@
-import { browser } from '$app/environment';
-import { writable } from 'svelte/store';
+import { browser } from "$app/environment";
 
-const defaultValue = 'light';
-const initialValue = browser ? window.localStorage.getItem('theme') ?? defaultValue : defaultValue;
-
-const theme = writable<string>(initialValue);
-
-theme.subscribe((value) => {
-  if (browser) {
-    window.localStorage.setItem('theme', value);
+export default class Theme {
+  private static themeItem = 'theme';
+  private static setTheme(value: string): void {
+    if (browser) {
+      window.localStorage.setItem(this.themeItem, value);
+    }
   }
-});
 
-export default theme;
+  public static getTheme(): string | null | undefined {
+    if (browser) {
+      return window.localStorage.getItem(this.themeItem);
+    }
+  }
+
+  public static switchTheme(darkMode: boolean): boolean | void {
+    if (browser) {
+      darkMode ? this.setTheme("light") : this.setTheme("dark");
+
+      const classList = document.documentElement.classList;
+
+      darkMode
+        ? classList.remove("dark")
+        : classList.add("dark");
+
+      return !darkMode;
+    }
+  }
+}

@@ -1,15 +1,9 @@
 <script lang="ts">
-  import { browser } from "$app/environment";
-  import theme from "$lib/theme";
   import "../app.css";
+  import Theme from "$lib/theme";
 
-  const darkMode = $theme === "dark" ? true : false;
-
-  browser
-    ? darkMode
-      ? document.documentElement.classList.add("dark")
-      : document.documentElement.classList.remove("dark")
-    : null;
+  const darkMode = Theme.getTheme() == "dark" ? true : false;
+  Theme.switchTheme(!darkMode);
 </script>
 
 <slot />
