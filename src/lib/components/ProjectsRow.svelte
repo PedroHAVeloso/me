@@ -27,6 +27,7 @@
   <Project
     title="Post in"
     thumb={postinProject}
+    projectLink="https://github.com/PedroHAVeloso/postin"
     skills={[
       { src: typescriptIcon, alt: "TS" },
       { src: reactIcon, alt: "React" },
@@ -44,6 +45,7 @@
   <Project
     title="BrApi Dart"
     thumb={brapiProject}
+    projectLink="https://pub.dev/packages/br_api"
     skills={[
       { src: dartIcon, alt: "Dart" },
       { src: gitIcon, alt: "Git" },
@@ -58,6 +60,7 @@
   <Project
     title="VZ App"
     thumb={vzappProject}
+    projectLink="https://github.com/PedroHAVeloso/vz_app"
     skills={[
       { src: flutterIcon, alt: "Flutter" },
       { src: dartIcon, alt: "Dart" },
@@ -73,6 +76,7 @@
   <Project
     title="VZ Api"
     thumb={vzapiProject}
+    projectLink="https://github.com/PedroHAVeloso/vz_api"
     skills={[
       { src: dartfrogIcon, alt: "Dart Frog" },
       { src: dartIcon, alt: "Dart" },
@@ -89,6 +93,7 @@
   <Project
     title="VZ App Design"
     thumb={vzappFigmaProject}
+    projectLink="https://www.figma.com/community/file/1258821624890062447"
     skills={[{ src: figmaIcon, alt: "Figma" }]}
   >
     <p slot="description">

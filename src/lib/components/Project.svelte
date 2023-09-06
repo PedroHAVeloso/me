@@ -1,8 +1,15 @@
 <script lang="ts">
+  import { goto } from "$app/navigation";
+
   export let title: string;
   export let thumb: string;
+  export let projectLink = "";
 
   export let skills: { src: string; alt: string }[];
+
+  function gotoProject() {
+    goto(projectLink);
+  }
 </script>
 
 <article
@@ -27,6 +34,7 @@
 
   <button
     type="button"
+    on:click={gotoProject}
     class="h-[50px] w-full bg-slate-200 dark:bg-slate-900 rounded-[20px] transition duration-500 hover:bg-slate-300 dark:hover:bg-slate-800"
   >
     Clique para ver
